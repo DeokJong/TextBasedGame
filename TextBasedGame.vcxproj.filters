@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="SkillClass">
+      <UniqueIdentifier>{08652cab-b349-49f4-afb1-7a89f5fb48ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkillClass\ActiveSkill">
+      <UniqueIdentifier>{47f4748d-a414-4262-915a-326d9890059f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkillClass\ActiveSkill\Newby">
+      <UniqueIdentifier>{9ddc441d-8ecd-4476-b223-ff48495b6fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkillClass\ActiveSkill\Warrior">
+      <UniqueIdentifier>{3bd081f7-9bd7-4e78-9657-1dec5fbabcde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{f991f3b5-55ab-456c-9775-23303dc53926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\BaseEntity">
+      <UniqueIdentifier>{2b69cab2-9036-4117-ae19-24cf0b1e2d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Player">
+      <UniqueIdentifier>{a3ee44a3-02e8-49f4-bff3-76ebc3a79509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkillClass\SKillBase">
+      <UniqueIdentifier>{fc3ab2d8-c2f2-460d-b0c4-b6191ebc86cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkillClass\Buff">
+      <UniqueIdentifier>{978f2f28-dd69-4840-9e2b-2f869c0213d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkillClass\Buff\BuffBase">
+      <UniqueIdentifier>{b879d47a-d7d6-4eec-b206-4636f2d84d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SkillClass\Buff\StandardBuff">
+      <UniqueIdentifier>{4a3539f5-8c26-4ed1-b5d1-d2c5774740e9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Skill.cpp">
+      <Filter>SkillClass\SKillBase</Filter>
+    </ClCompile>
+    <ClCompile Include="NewbyActiveSkillList.cpp">
+      <Filter>SkillClass\ActiveSkill\Newby</Filter>
+    </ClCompile>
+    <ClCompile Include="WarriorActiveSkillList.cpp">
+      <Filter>SkillClass\ActiveSkill\Warrior</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillFactory.cpp">
+      <Filter>SkillClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entity\BaseEntity</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entity\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="BuffBase.cpp">
+      <Filter>SkillClass\Buff\BuffBase</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardBuff.cpp">
+      <Filter>SkillClass\Buff\StandardBuff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Skill.h">
+      <Filter>SkillClass\SKillBase</Filter>
+    </ClInclude>
+    <ClInclude Include="NewbyActiveSkillList.h">
+      <Filter>SkillClass\ActiveSkill\Newby</Filter>
+    </ClInclude>
+    <ClInclude Include="WarriorActiveSkillList.h">
+      <Filter>SkillClass\ActiveSkill\Warrior</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillFactory.h">
+      <Filter>SkillClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Entity\BaseEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Entity\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="BuffBase.h">
+      <Filter>SkillClass\Buff\BuffBase</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardBuff.h">
+      <Filter>SkillClass\Buff\StandardBuff</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
