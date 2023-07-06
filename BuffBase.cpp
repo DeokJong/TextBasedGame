@@ -2,7 +2,7 @@
 
 BuffBase::BuffBase(int r, int t) :rate(r), time(t) {}
 
-BuffBase::~BuffBase() { deAllocate(); }
+BuffBase::~BuffBase() {  }
 
 int BuffBase::getRate() {
 	return rate;

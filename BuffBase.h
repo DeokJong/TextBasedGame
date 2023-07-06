@@ -5,8 +5,8 @@ class BuffBase{
 protected:
 	BuffBase(int r, int t);
 	~BuffBase();
-	virtual void allocate() = 0;
-	virtual void deAllocate() = 0;
+	/*virtual void allocate() = 0;
+	virtual void deAllocate() = 0;*/
 	
 	int getRate();
 	int getTime();

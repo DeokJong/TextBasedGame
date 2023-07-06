@@ -1,17 +1,25 @@
 #pragma once
 #include "Entity.h"
 #include "SkillFactory.h"
+#include <random>
 #include <iostream>
 #include <vector>
 
 
 class Player : public Entity {
+	mt19937 mt;
+	uniform_int_distribution<int> gen;
+
 	std::vector<Skill*> PlayerSkill;
 	SkillFactory SF;
-	
 public:
 	Player();
-	Entity TPD=(Entity)*this;
+	Entity TPD;
+
+	void initRandom();
+	void startRandom(int l,int r) {
+		gen = uniform_int_distribution<int>(l, r);
+	}
 
 	void addSkill(Skill* skill);
 	void setSkill(Skill*,int index);

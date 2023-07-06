@@ -2,36 +2,53 @@
 #include <string>
 #include <iostream>
 using namespace std;
-class Entity{
+class Entity {
 	string name;
 	string job;
+
+	int maxHp;
+	int maxMana;
+	int maxDamage;
+	int minDamage;
+
 	int hp;
 	int mana;
+
 	int defence;
-	int damage;
 	int activity;
 	int hitRate;
 	int avoidance;
 protected:
-	Entity(string name="", int hp=0, int mana = 0, int defence = 0, int damage = 0, int activity = 0);
-	Entity(const Entity& e);
+	Entity(string name, string job, int maxHp, int maxMana, int maxDamage, int minDamage);
 	void setJob(string);
 	void setName();
 public:
+	Entity();
+	Entity(const Entity& e);
+
+	void setMaxHp(int);
+	void setMaxMana(int);
+	void setMaxDamage(int);
+	void setMinDamage(int);
+
 	void setHp(int hp);
 	void setMana(int mana);
 	void setDefence(int defence);
-	void setDamage(int damage);
 	void setActivity(int activity);
 	void setHitRate(int hitRate);
 	void setAvoidance(int Avoidnace);
 
+	int getMaxHp();
+	int getMaxMana();
+	int getMaxDamage();
+	int getMinDamage();
+
 	int getHp();
 	int getMana();
 	int getDefence();
-	int getDamage();
 	int getActivity();
 	int getHitRate();
 	int getAvoidance();
+
 };
 

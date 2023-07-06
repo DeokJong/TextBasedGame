@@ -1,11 +1,16 @@
 #include "Player.h"
-
-Player::Player() : Entity("", 100, 30, 5, 10, 0) {
+//const std::string& name, const std::string& job, int maxHp,
+//int maxMana, int maxDamage, int minDamage
+Player::Player() : Entity("","ÃÊº¸ÀÚ",100,30,20,10) {
 	setName();
-	setJob("Newby");
 	addSkill(SF.getNewbySkill(1));
 	addSkill(SF.getNewbySkill(2));
 	addSkill(SF.getNewbySkill(0));
+}
+
+void Player::initRandom() {
+	random_device rd;
+	mt = *(new mt19937(rd()));
 }
 
 void Player::addSkill(Skill* skill) {
@@ -27,24 +32,26 @@ void Player::useSkill(int index) {
 
 
 void Player::saveData() {
-	this->TPD.setHp(Entity::hp);
-	this->TPD.setMana(Entity::mana);
-	this->TPD.setDefence(Entity::defence);
-	this->TPD.setDamage(Entity::damage);
-	this->TPD.setActivity(Entity::activity);
+	this->TPD = Entity(p);
 }
 
 void Player::loadData() {
-	setHp(TPD.getHp());
-	setMana(TPD.getMana());
-	setDefence(TPD.getDefence());
-	setDamage(TPD.getDamage());
-	setActivity(TPD.getActivity());
+	this->setMaxHp(this->TPD.getMaxHp());
+	this->setMaxMana(this->TPD.getMaxMana());
+	this->setMaxDamage(this->TPD.getMaxDamage());
+	this->setMinDamage(this->TPD.getMinDamage());
+	this->setHp( this->TPD.getHp());
+	this->setMana( this->TPD.getMana());
+	this->setDefence( this->TPD.getDefence());
+	this->setActivity(this->TPD.getActivity());
+	this->setHitRate( this->TPD.getHitRate());
+	this->setAvoidance( this->TPD.getAvoidance());
 }
 
 int Player::attack(int rate)
 {
-	return (int)damage * rate / 100;
+	startRandom(this->getMinDamage(), this->getMaxDamage());
+	return (int)(gen(mt)*rate/100);
 }
 
 

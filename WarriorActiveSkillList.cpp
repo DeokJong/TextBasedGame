@@ -14,7 +14,7 @@ RagingCry::RagingCry() :Skill("RagingCry", 100,1){
 
 void RagingCry::active(){
 	cout << "격노의 외침!\n";
-	p.setDamage(p.getDamage()*2);
+
 }
 
 DeathStrike::DeathStrike() : Skill("DeathStrike", 300,1){
