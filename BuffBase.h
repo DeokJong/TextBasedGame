@@ -4,13 +4,12 @@ class BuffBase{
 	int time;
 protected:
 	BuffBase(int r, int t);
-	~BuffBase();
-	/*virtual void allocate() = 0;
-	virtual void deAllocate() = 0;*/
-	
+	virtual void allocate() = 0;
 	int getRate();
 	int getTime();
 public:
+	virtual void deAllocate() = 0;
 	bool isTime();
+	void check();
 };
 

@@ -2,7 +2,6 @@
 
 BuffBase::BuffBase(int r, int t) :rate(r), time(t) {}
 
-BuffBase::~BuffBase() {  }
 
 int BuffBase::getRate() {
 	return rate;
@@ -12,6 +11,14 @@ int BuffBase::getTime() {
 	return time;
 }
 
+
+
 bool BuffBase::isTime() {
 	return !(time >= 0);
+}
+
+void BuffBase::check() {
+	if (isTime()) {
+		time--;
+	}
 }

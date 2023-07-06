@@ -13,6 +13,10 @@ void Player::initRandom() {
 	mt = *(new mt19937(rd()));
 }
 
+inline void Player::startRandom(int l, int r) {
+	gen = uniform_int_distribution<int>(l, r);
+}
+
 void Player::addSkill(Skill* skill) {
 	PlayerSkill.push_back(skill);
 }
@@ -27,6 +31,10 @@ Skill* Player::getSkill(int index)
 
 void Player::useSkill(int index) {
 	PlayerSkill[index]->active();
+}
+
+void Player::addBuff(BuffBase* buff) {
+	buffList.push_back(buff);
 }
 
 
