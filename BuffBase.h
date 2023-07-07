@@ -10,6 +10,6 @@ protected:
 public:
 	virtual void deAllocate() = 0;
 	bool isTime();
-	void check();
+	bool check();
 };
 

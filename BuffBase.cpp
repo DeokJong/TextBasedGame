@@ -11,14 +11,16 @@ int BuffBase::getTime() {
 	return time;
 }
 
-
-
 bool BuffBase::isTime() {
 	return !(time >= 0);
 }
 
-void BuffBase::check() {
+bool BuffBase::check() {
 	if (isTime()) {
 		time--;
+		return true;
+	}
+	else {
+		return false;
 	}
 }

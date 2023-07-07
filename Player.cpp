@@ -8,15 +8,6 @@ Player::Player() : Entity("","ÃÊº¸ÀÚ",100,30,20,10) {
 	addSkill(SF.getNewbySkill(0));
 }
 
-void Player::initRandom() {
-	random_device rd;
-	mt = *(new mt19937(rd()));
-}
-
-inline void Player::startRandom(int l, int r) {
-	gen = uniform_int_distribution<int>(l, r);
-}
-
 void Player::addSkill(Skill* skill) {
 	PlayerSkill.push_back(skill);
 }
@@ -37,8 +28,6 @@ void Player::addBuff(BuffBase* buff) {
 	buffList.push_back(buff);
 }
 
-
-
 void Player::saveData() {
 	this->TPD = Entity(p);
 }
@@ -56,11 +45,27 @@ void Player::loadData() {
 	this->setAvoidance( this->TPD.getAvoidance());
 }
 
-int Player::attack(int rate)
-{
-	startRandom(this->getMinDamage(), this->getMaxDamage());
-	return (int)(gen(mt)*rate/100);
+void Player::checkBuffList() {
+	for (auto it = buffList.begin(); it != buffList.end(); it++) {
+		(*it)->check();
+	}
+
+	while (true) {
+		bool done = false;
+		int loopCount = 0;
+		for (auto it = buffList.begin(); it != buffList.end(); it++, loopCount++) {
+			if (!((*it)->isTime())) {
+				(*it)->deAllocate();
+				delete* it;
+				buffList.erase(it);
+				break;
+			}
+
+
+			if (it + 1 == buffList.end())done = true;
+		}
+
+		if (done || loopCount == 0) break;
+	}
 }
-
-
 Player p;

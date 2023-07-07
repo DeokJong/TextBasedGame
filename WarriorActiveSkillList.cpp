@@ -9,16 +9,18 @@ void PowerSlash::active(){
 	p.attack(this->rate);
 }
 
-RagingCry::RagingCry() :Skill("RagingCry", 100,1){
+
+RagingCry::RagingCry() :Skill("RagingCry", 100, 1) {
 }
 
-void RagingCry::active(){
+void RagingCry::active() {
 	cout << "격노의 외침!\n";
 
 }
 
-DeathStrike::DeathStrike() : Skill("DeathStrike", 300,1){
-}	
+
+DeathStrike::DeathStrike() : Skill("DeathStrike", 300, 1) {
+}
 
 
 void DeathStrike::active()

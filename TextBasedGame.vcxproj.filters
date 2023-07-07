@@ -46,6 +46,15 @@
     <Filter Include="SkillClass\Buff\StandardBuff">
       <UniqueIdentifier>{4a3539f5-8c26-4ed1-b5d1-d2c5774740e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Entity\Monster">
+      <UniqueIdentifier>{86170667-e39b-495a-a91f-5e143cd702cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Monster\MonsterFactory">
+      <UniqueIdentifier>{e10aac00-48bb-444e-a5e3-a20f31a6fa4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Monster\MonsterList">
+      <UniqueIdentifier>{a4854997-03da-4778-bf6d-7a13400fd2dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -75,6 +84,9 @@
     <ClCompile Include="StandardBuff.cpp">
       <Filter>SkillClass\Buff\StandardBuff</Filter>
     </ClCompile>
+    <ClCompile Include="MonsterList.cpp">
+      <Filter>Entity\Monster\MonsterList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Skill.h">
@@ -100,6 +112,12 @@
     </ClInclude>
     <ClInclude Include="StandardBuff.h">
       <Filter>SkillClass\Buff\StandardBuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Entity\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterList.h">
+      <Filter>Entity\Monster\MonsterList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
