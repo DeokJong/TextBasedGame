@@ -77,9 +77,9 @@ void Player::initPlayer() {
 	//MaxMana 20~30
 	//Defence 5~10;
 	setName();
-	setMaxHp(roll(300, 500));
+	setMaxHp(roll(200,300));
 	setHp(getMaxHp());
-	int temp = roll(12, 15);
+	int temp = roll(15, 20);
 	setMaxDamage(temp + 5);
 	setMinDamage(temp - 5);
 	setDefence(roll(5, 10));
@@ -87,6 +87,7 @@ void Player::initPlayer() {
 
 int Player::selectSkill() {
 	string op;
+	int tempOp;
 	cout << "===Skill List===\n";
 	int i = 1;
 	cout << " - 0 : 스탯보기" << endl;
@@ -98,23 +99,24 @@ int Player::selectSkill() {
 		bool isNumber = true;;
 
 		cout << " : ";
-		getline(cin, op,'\n');
-
-		for (char c : op) {
-			if (!isdigit(c)) {
-				isNumber = false;
-				break;
-			}
-		}
-
-		if (!isNumber||op.size() >= 2|| stoi(op)<0 || i<stoi(op)) {
-			cout << "잘못된 입력입니다! 다시 입력해주세요\n";
+		getline(cin, op);
+		if (op.size() >= 2) {
+			cout << "잘못된 입력입니다...\n";
 			continue;
 		}
+
+		tempOp=op[0];
+		tempOp -= '0';
+
+		if (tempOp < 0 || i <= tempOp) {
+			cout << "잘못된 입력입니다...\n";
+			continue;
+		}
+
 		break;
 	}
 
-	return stoi(op) - 1;
+	return tempOp - 1;
 }
 void Player::addHp(int rate) {
 	int temp = p.getHp() + rate;
@@ -130,4 +132,5 @@ void Player::upLevel() {
 	setHp(getMaxHp());
 	setLevel(getLevel() + 1);
 }
+int Player::getKillCount() { return this->killCounter; }
 Player p;

@@ -35,6 +35,8 @@ public:
 	void addHp(int rate);
 
 	void upLevel();
+
+	int getKillCount();
 };
 
 extern Player p;

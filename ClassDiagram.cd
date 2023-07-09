@@ -1,112 +1,120 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="SkillFactory" Collapsed="true">
-    <Position X="27.75" Y="1.5" Width="1.5" />
+  <Class Name="SkillFactory">
+    <Position X="24.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAQAEACAAAAAAAAAAAAACAEAAAAAAA=</HashCode>
       <FileName>SkillFactory.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Hit" Collapsed="true">
+  <Class Name="Hit">
     <Position X="0.5" Y="11.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>NewbyActiveSkillList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Roll" Collapsed="true">
-    <Position X="2.75" Y="11.75" Width="1.5" />
+  <Class Name="Roll">
+    <Position X="2" Y="11.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>NewbyActiveSkillList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Heal" Collapsed="true">
-    <Position X="5" Y="11.75" Width="1.5" />
+  <Class Name="Heal">
+    <Position X="0.5" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>NewbyActiveSkillList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PowerSlash" Collapsed="true">
-    <Position X="7.25" Y="11.75" Width="1.5" />
+  <Class Name="PowerSlash">
+    <Position X="2" Y="13.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAIAAAAAA=</HashCode>
       <FileName>WarriorActiveSkillList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="RagingCry" Collapsed="true">
-    <Position X="9.5" Y="11.75" Width="1.5" />
+  <Class Name="RagingCry">
+    <Position X="0.5" Y="14.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAIAAAAAA=</HashCode>
       <FileName>WarriorActiveSkillList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeathStrike" Collapsed="true">
-    <Position X="11.75" Y="11.75" Width="1.5" />
+  <Class Name="DeathStrike">
+    <Position X="2" Y="14.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAg=</HashCode>
       <FileName>WarriorActiveSkillList.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Skill" Collapsed="true">
-    <Position X="6" Y="10.5" Width="1.5" />
+    <Position X="6" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAABAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEIAAAAAA=</HashCode>
       <FileName>Skill.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BuffBase" Collapsed="true">
-    <Position X="6" Y="7.5" Width="1.5" />
+    <Position X="8.25" Y="15" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQBAEAAEABIAAAAAAAAAAAAAAAAAAAAAABQACEAAAA=</HashCode>
       <FileName>BuffBase.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="maxDamageBuff" Collapsed="true">
-    <Position X="2.75" Y="8.75" Width="1.5" />
+  <Class Name="maxDamageBuff">
+    <Position X="9.75" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>StandardBuff.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="minDamageBuff" Collapsed="true">
-    <Position X="5" Y="8.75" Width="1.5" />
+  <Class Name="minDamageBuff">
+    <Position X="11.25" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>StandardBuff.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="defenceBuff" Collapsed="true">
-    <Position X="7.25" Y="8.75" Width="1.5" />
+  <Class Name="defenceBuff">
+    <Position X="12.75" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAEAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StandardBuff.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="activityBuff" Collapsed="true">
-    <Position X="9.5" Y="8.75" Width="1.5" />
+  <Class Name="activityBuff">
+    <Position X="9.75" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAEAAAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StandardBuff.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="hitRateBuff" Collapsed="true">
-    <Position X="11.75" Y="8.75" Width="1.5" />
+  <Class Name="hitRateBuff">
+    <Position X="11.25" Y="12.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAEAAAAAAAQAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StandardBuff.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="avoidanceBuff" Collapsed="true">
-    <Position X="0.5" Y="8.75" Width="1.5" />
+  <Class Name="avoidanceBuff">
+    <Position X="12.75" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="BuffBase" FixedToPoint="true">
+      <Path>
+        <Point X="9.547" Y="15" />
+        <Point X="9.547" Y="12.227" />
+        <Point X="12.75" Y="12.227" />
+        <Point X="12.75" Y="12.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>StandardBuff.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entity" Collapsed="true">
-    <Position X="12.25" Y="0.5" Width="1.5" />
+    <Position X="17.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>MIAADgIgAIiAwLAACAGCAGIgBAEEIgDN0ADMIAgCACI=</HashCode>
       <FileName>Entity.h</FileName>
@@ -115,67 +123,67 @@
   <Class Name="Player" Collapsed="true">
     <Position X="23.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EQogAAAAAAADABAQAA0AACAAAgQAAAAAAAAAAYAAAAA=</HashCode>
+      <HashCode>EQogAAAAAAADABAQAA0AADAAAgQAAAAAAAAAAYAAAAA=</HashCode>
       <FileName>Player.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MonsterFactory" Collapsed="true">
+  <Class Name="MonsterFactory">
     <Position X="26" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MonsterFactory.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Gobblin" Collapsed="true">
+  <Class Name="Gobblin">
     <Position X="10" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAIAAABEAAAIAAAEAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Orc" Collapsed="true">
+  <Class Name="Orc">
     <Position X="14.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAIAAAAEAAAIAAAEAAAAgAAAQAAAAAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Slime" Collapsed="true">
+  <Class Name="Slime">
     <Position X="19" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAIAAAAEAAAIAAAEAAAAAAAAQAAACAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GiantRat" Collapsed="true">
-    <Position X="1" Y="3.25" Width="1.5" />
+  <Class Name="GiantRat">
+    <Position X="1" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAIAAAAEAAAIAAAEAAgAAAAAQAAAAAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lmp" Collapsed="true">
-    <Position X="3.25" Y="3.25" Width="1.5" />
+  <Class Name="Lmp">
+    <Position X="9" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAACAAAAAAIAAAAEAAAIAAAEAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Skeleton" Collapsed="true">
-    <Position X="5.5" Y="3.25" Width="1.5" />
+  <Class Name="Skeleton">
+    <Position X="5.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EEAAAAAAAAAAAIAAAAEAAAIAAAEAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Troll" Collapsed="true">
+  <Class Name="Troll">
     <Position X="7.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAIAAAAEAAAIAAAEAAAAAAAAQABAAAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Golem" Collapsed="true">
+  <Class Name="Golem">
     <Position X="12.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAIAAAAEAAAIAAAEAAAAAAAAQAAAEAAA=</HashCode>
@@ -189,85 +197,115 @@
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DwarfWarrior" Collapsed="true">
+  <Class Name="DwarfWarrior">
     <Position X="21.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAIAAAAEAAAIAAAEAAAAAAAEQAAAAAAA=</HashCode>
       <FileName>MonsterList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Monster" Collapsed="true">
-    <Position X="11.25" Y="1.75" Width="1.5" />
+  <Class Name="Monster">
+    <Position X="12" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAEAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Monster.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="EventHandler" Collapsed="true">
-    <Position X="26" Y="0.5" Width="1.5" />
+  <Class Name="EventHandler">
+    <Position X="32" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAACAAAAAAAAAAgAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>EventHandler.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MonsterEncounter" Collapsed="true">
-    <Position X="5" Y="5.75" Width="1.5" />
+  <Class Name="MonsterEncounter">
+    <Position X="3.5" Y="7" Width="1.5" />
+    <InheritanceLine Type="Event">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.828" Y="-2.926" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
       <FileName>EventList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ambush" Collapsed="true">
-    <Position X="7.25" Y="5.75" Width="1.5" />
+  <Class Name="Ambush">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <InheritanceLine Type="Event">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-6.194" Y="0.495" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EventList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ambushed" Collapsed="true">
-    <Position X="9.5" Y="5.75" Width="1.5" />
+  <Class Name="Ambushed">
+    <Position X="2" Y="7" Width="1.5" />
+    <InheritanceLine Type="Event">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="-0.868" Y="3.408" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EventList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FindArtifact" Collapsed="true">
-    <Position X="11.75" Y="5.75" Width="1.5" />
+  <Class Name="FindArtifact">
+    <Position X="0.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EventList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FindTemplate" Collapsed="true">
-    <Position X="14" Y="5.75" Width="1.5" />
+  <Class Name="FindTemplate">
+    <Position X="2" Y="8.25" Width="1.5" />
+    <InheritanceLine Type="Event">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="4.205" Y="-0.144" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EventList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TrapRoom" Collapsed="true">
+  <Class Name="TrapRoom">
     <Position X="0.5" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Event">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="1.553" Y="-5.818" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EventList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="FindWell" Collapsed="true">
-    <Position X="2.75" Y="5.75" Width="1.5" />
+  <Class Name="FindWell">
+    <Position X="2" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="Event">
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="1.292" Y="-4.738" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EventList.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Event" Collapsed="true">
-    <Position X="7.25" Y="4.5" Width="1.5" />
+  <Class Name="Event">
+    <Position X="5.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAACAAAAEAAAAAAAAgAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Event.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GameStream" Collapsed="true">
-    <Position X="27.75" Y="0.5" Width="1.5" />
+  <Class Name="GameStream">
+    <Position X="29.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>wAEAQAAABABACECAAgAAAAAgAAICAAAAAECAgEAAAAA=</HashCode>
       <FileName>GameStream.h</FileName>

@@ -31,9 +31,11 @@ void GameStream::showMenu() {
 
 int GameStream::getIntOption() {
 	while (true) {
+		bool isNumber = true;
 		string op;
 		cout << ">> ";
-		cin >> op;
+		getline(cin, op);
+
 		if (op == "1")return 1;
 		else if (op == "2")return 2;
 		else if (op == "3")return 3;
@@ -110,13 +112,14 @@ int GameStream::roll(int l, int r) {
 
 void GameStream::saveScore() {
 	ofstream fout("./Score.txt", ios::app);
-	fout << " - Name       : " << p.getName()<<endl;
+	fout << " - Name       : " << p.getName() << endl;
 	fout << " - Job        : " << p.getJob() << endl;
 	fout << " - Max Hp     : " << p.getMaxHp() << endl;
 	fout << " - Max Damage : " << p.getMaxDamage() << endl;
 	fout << " - Min Damage : " << p.getMinDamage() << endl;
 	fout << " - Max Mana   : " << p.getMaxMana() << endl;
 	fout << " - Level      : " << p.getLevel() << endl;
+	fout << " - Kill Count : " << p.getKillCount() << endl;
 	fout << endl << endl;
 	fout.close();
 }
@@ -136,4 +139,4 @@ void GameStream::loadScore() {
 	fin.close();
 }
 
-int GameStream::currentStage = 1;
+int GameStream::currentStage = 4;

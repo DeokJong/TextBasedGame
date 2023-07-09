@@ -16,8 +16,8 @@
 
 
 Slime::Slime() :Monster("슬라임", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
-	setLevel(this->level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	setLevel(Slime::level);
+	reRoll(Slime::maxHp, Slime::minHp, Slime::maxDamage, Slime::minDamage);
 }
 void Slime::upLevel() {
 	this->maxHp += this->maxHp / 5;
@@ -34,7 +34,7 @@ int Slime::level = 1;
 
 GiantRat::GiantRat() :Monster("거대쥐", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(GiantRat::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(GiantRat::maxHp, GiantRat::minHp, GiantRat::maxDamage, GiantRat::minDamage);
 }
 void GiantRat::upLevel() {
 	this->maxHp += this->maxHp / 5;
@@ -51,7 +51,7 @@ int GiantRat::level = 1;
 
 Lmp::Lmp() :Monster("놀", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(Lmp::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(Lmp::maxHp, Lmp::minHp, Lmp::maxDamage, Lmp::minDamage);
 }
 void Lmp::upLevel() {
 	this->maxHp += this->maxHp / 5;
@@ -68,7 +68,7 @@ int Lmp::level = 1;
 
 Gobblin::Gobblin() :Monster("고블린", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(Gobblin::level);
-	reRoll(this->maxHp,this->minHp,this->maxDamage,this->minDamage);
+	reRoll(Gobblin::maxHp,Gobblin::minHp,Gobblin::maxDamage,Gobblin::minDamage);
 }
 void Gobblin::upLevel() {
 	this->maxHp += this->maxHp / 5;
@@ -77,21 +77,21 @@ void Gobblin::upLevel() {
 	this->minDamage += this->minDamage / 5;
 	this->level++;
 }
-int Gobblin::maxHp = 80;
-int Gobblin::minHp = 90;
+int Gobblin::maxHp = 90;
+int Gobblin::minHp = 80;
 int Gobblin::maxDamage = 20;
 int Gobblin::minDamage = 15;
 int Gobblin::level = 1;
 
 Skeleton::Skeleton() :Monster("스켈레톤", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(Skeleton::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(Skeleton::maxHp, Skeleton::minHp, Skeleton::maxDamage, Skeleton::minDamage);
 }
 void Skeleton::upLevel() {
-	this->maxHp += this->maxHp / 5;
-	this->minHp += this->minHp / 5;
-	this->maxDamage += this->maxDamage / 5;
-	this->minDamage += this->minDamage / 5;
+	this->maxHp += this->maxHp / 20;
+	this->minHp += this->minHp / 20;
+	this->maxDamage += this->maxDamage / 20;
+	this->minDamage += this->minDamage /20;
 	this->level++;
 }
 int Skeleton::maxHp = 50;
@@ -102,13 +102,13 @@ int Skeleton::level = 1;
 
 DwarfWarrior::DwarfWarrior() :Monster("드워프 전사", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(DwarfWarrior::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(DwarfWarrior::maxHp, DwarfWarrior::minHp, DwarfWarrior::maxDamage, DwarfWarrior::minDamage);
 }
 void DwarfWarrior::upLevel() {
-	this->maxHp += this->maxHp / 5;
-	this->minHp += this->minHp / 5;
-	this->maxDamage += this->maxDamage / 5;
-	this->minDamage += this->minDamage / 5;
+	this->maxHp += this->maxHp / 20;
+	this->minHp += this->minHp / 20;
+	this->maxDamage += this->maxDamage / 20;
+	this->minDamage += this->minDamage / 20;
 	this->level++;
 }
 int DwarfWarrior::maxHp = 150;
@@ -119,13 +119,13 @@ int DwarfWarrior::level = 1;
 
 Orc::Orc() :Monster("오크", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(Orc::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(Orc::maxHp, Orc::minHp, Orc::maxDamage, Orc::minDamage);
 }
 void Orc::upLevel() {
-	this->maxHp += this->maxHp / 5;
-	this->minHp += this->minHp / 5;
-	this->maxDamage += this->maxDamage / 5;
-	this->minDamage += this->minDamage / 5;
+	this->maxHp += this->maxHp / 10;
+	this->minHp += this->minHp / 10;
+	this->maxDamage += this->maxDamage / 10;
+	this->minDamage += this->minDamage / 10;
 	this->level++;
 }
 int Orc::maxHp = 1000;
@@ -138,7 +138,7 @@ int Orc::level = 1;
 
 Troll::Troll() :Monster("트롤", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(Troll::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(Troll::maxHp, Troll::minHp, Troll::maxDamage, Troll::minDamage);
 }
 void Troll::upLevel() {
 	this->maxHp += this->maxHp / 5;
@@ -155,7 +155,7 @@ int Troll::level = 1;
 
 Golem::Golem() :Monster("골렘", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(Golem::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(Golem::maxHp, Golem::minHp, Golem::maxDamage, Golem::minDamage);
 }
 void Golem::upLevel() {
 	this->maxHp += this->maxHp / 5;
@@ -172,7 +172,7 @@ int Golem::level = 1;
 
 Dragon::Dragon() :Monster("드래곤", "몬스터", IGNORE_RATE, IGNORE_RATE, maxDamage, minDamage) {
 	setLevel(Dragon::level);
-	reRoll(this->maxHp, this->minHp, this->maxDamage, this->minDamage);
+	reRoll(Dragon::maxHp, Dragon::minHp, Dragon::maxDamage, Dragon::minDamage);
 }
 void Dragon::upLevel() {
 	this->maxHp += this->maxHp / 5;
