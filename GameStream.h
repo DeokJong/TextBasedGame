@@ -1,6 +1,7 @@
 #pragma once
 #include "Player.h"
 #include "EventHandler.h"
+#include <fstream>
 #include <random>
 
 class GameStream{
@@ -21,7 +22,7 @@ public:
 	
 	void makePlayer();
 
-	void showScore() {}
+	void showScore();
 
 	void enterUnderFloor();
 
@@ -30,5 +31,9 @@ public:
 	void doneFloor();
 
 	int roll(int l, int r);
+
+	void saveScore();
+
+	void loadScore();
 
 };

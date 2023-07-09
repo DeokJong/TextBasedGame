@@ -1,10 +1,6 @@
 #include "Skill.h"
 
-Skill::Skill(string name, int rate, int type) : name(name), rate(rate), type(type) {
-	if (!(0 <= type && type <= 1)) {
-		cout << "Skill Base Construct type Erorr!\n";
-		exit(0);
-	}
+Skill::Skill(string name, int rate, int time) : name(name), rate(rate), time(time) {
 }
 
 string Skill::getName()

@@ -21,7 +21,7 @@
 class MonsterFactory {
 	int roll();
 public:
-	Entity getMonster(int group);
+	Monster* getMonster(int group);
 };
 
 

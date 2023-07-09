@@ -11,8 +11,8 @@ public:
 	Roll();
 	virtual void active()override;
 };
-class Guard : public Skill {
+class Heal : public Skill {
 public:
-	Guard();
+	Heal();
 	virtual void active() override;
 };

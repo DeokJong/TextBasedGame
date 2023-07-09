@@ -10,7 +10,4 @@ public:
 	int roll();
 
 	Event* getRandomEvent();
-
-	Event* getStart();
-	Event* getDie();
 };

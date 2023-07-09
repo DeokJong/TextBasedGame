@@ -25,12 +25,9 @@ class Entity {
 protected:
 
 	Entity(string name, string job, int maxHp, int maxMana, int maxDamage, int minDamage);
-	void setJob(string);
 	void setName();
 
 	int roll(int l, int r);
-	virtual void upLevel();
-
 public:
 	Entity();
 	Entity(const Entity& e);
@@ -51,6 +48,8 @@ public:
 	void setLevel(int level);
 
 	string getName();
+	string getJob();
+	void setJob(string j);
 
 	int getMaxHp();
 	int getMaxMana();
@@ -68,4 +67,9 @@ public:
 	int getLevel();
 
 	int attack(int rate);
+
+	bool hasHp(int damage);
+	void attacked(int damage);
+
+	void showStatus();
 };

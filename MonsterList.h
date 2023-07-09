@@ -10,7 +10,7 @@ class Gobblin : public Monster {
 	static int level;
 public:
 	Gobblin();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class Orc : public Monster {
@@ -21,7 +21,7 @@ class Orc : public Monster {
 	static int level;
 public:
 	Orc();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class Slime :public Monster {
@@ -32,7 +32,7 @@ class Slime :public Monster {
 	static int level;
 public:
 	Slime();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class GiantRat : public Monster{
@@ -43,7 +43,7 @@ class GiantRat : public Monster{
 	static int level;
 public:
 	GiantRat();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class Lmp:public Monster{
@@ -54,7 +54,7 @@ class Lmp:public Monster{
 	static int level;
 public:
 	Lmp();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class Skeleton :public Monster {
@@ -65,7 +65,7 @@ class Skeleton :public Monster {
 	static int level;
 public:
 	Skeleton();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class Troll :public Monster {
@@ -77,7 +77,7 @@ class Troll :public Monster {
 	static int level;
 public:
 	Troll();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class Golem : public Monster {
@@ -88,7 +88,7 @@ class Golem : public Monster {
 	static int level;
 public:
 	Golem();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class Dragon : public Monster {
@@ -99,7 +99,7 @@ class Dragon : public Monster {
 	static int level;
 public:
 	Dragon();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 
 class  DwarfWarrior: public Monster {
@@ -110,6 +110,6 @@ class  DwarfWarrior: public Monster {
 	static int level;
 public:
 	DwarfWarrior();
-	virtual void upLevel();
+	virtual void upLevel()override;
 };
 

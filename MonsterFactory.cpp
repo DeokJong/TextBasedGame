@@ -7,31 +7,51 @@ int MonsterFactory::roll() {
 	return dis(gen);
 }
 
-Entity MonsterFactory::getMonster(int group) {
+Monster* MonsterFactory::getMonster(int stage) {
+	int group = 0;
+
+	switch (stage)
+	{
+	case 1:
+	case 2:
+	case 3: group = 1;
+		break;
+	case 4:
+	case 5:
+	case 6: group = 2;
+		break;
+	case 7:
+	case 8:
+	case 9:group = 3;
+		break;
+	case 10:group = 4;
+		break;
+	}
+
 	switch (group) {
 	case 1:
 		switch (roll()) {
-		case 1:return Slime(); break;
-		case 2:return GiantRat(); break;
-		case 3:return Lmp(); break;
+		case 1:return new Slime(); break;
+		case 2:return new GiantRat(); break;
+		case 3:return new Lmp(); break;
 		}
 		break;
 	case 2:
 		switch (roll()) {
-		case 1:return Gobblin(); break;
-		case 2:return Skeleton(); break;
-		case 3:return DwarfWarrior(); break;
+		case 1:return new Gobblin(); break;
+		case 2:return new Skeleton(); break;
+		case 3:return new DwarfWarrior(); break;
 		}
 		break;
 	case 3:
 		switch (roll()) {
-		case 1:return Orc(); break;
-		case 2:return Troll(); break;
-		case 3:return Golem(); break;
+		case 1:return new Orc(); break;
+		case 2:return new Troll(); break;
+		case 3:return new Golem(); break;
 		}
 		break;
 	case 4:
-		return Dragon();
+		return new Dragon();
 		break;
 	default:
 		cout << "MonsterFactory getMonster Funcion is Error! system done!";

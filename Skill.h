@@ -6,11 +6,11 @@ using std::cout;
 
 class Skill {
 	string name;
-	int type;//0: attack skill, 1:passive
 protected:
 	Skill(string, int, int);
-	string getName();
 public:
+	string getName();
 	int rate;
+	int time;
 	virtual void active() = 0;
 };

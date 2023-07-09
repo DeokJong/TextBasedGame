@@ -1,0 +1,18 @@
+ - Name       : 
+ - Job        : 초보자
+ - Max Hp     : 414
+ - Max Damage : 17
+ - Min Damage : 7
+ - Max Mana   : 30
+ - Level      : 1
+
+
+ - Name       : 
+ - Job        : 초보자
+ - Max Hp     : 456
+ - Max Damage : 19
+ - Min Damage : 9
+ - Max Mana   : 30
+ - Level      : 1
+
+

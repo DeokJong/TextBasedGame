@@ -3,7 +3,7 @@
 SkillFactory::SkillFactory() {
 	newbyArr.push_back(new Hit());
 	newbyArr.push_back(new Roll());
-	newbyArr.push_back(new Guard());
+	newbyArr.push_back(new Heal ());
 
 	warriorArr.push_back(new PowerSlash());
 	warriorArr.push_back(new RagingCry());
