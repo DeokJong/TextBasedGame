@@ -21,17 +21,16 @@ class Entity {
 	int avoidance;
 
 	int damage;
+	int level;
 protected:
-	mt19937 mt;
-	uniform_int_distribution<int> gen;
 
-	Entity(string name="", string job="", int maxHp=1, int maxMana=1, int maxDamage=1, int minDamage=1);
+	Entity(string name, string job, int maxHp, int maxMana, int maxDamage, int minDamage);
 	void setJob(string);
 	void setName();
 
-	void initRandom();
 	int roll(int l, int r);
 	virtual void upLevel();
+
 public:
 	Entity();
 	Entity(const Entity& e);
@@ -49,6 +48,9 @@ public:
 	void setAvoidance(int Avoidnace);
 
 	void setDamage(int damage);
+	void setLevel(int level);
+
+	string getName();
 
 	int getMaxHp();
 	int getMaxMana();
@@ -63,6 +65,7 @@ public:
 	int getAvoidance();
 
 	int getDamage();
+	int getLevel();
 
 	int attack(int rate);
 };

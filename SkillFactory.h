@@ -3,7 +3,7 @@
 #include "WarriorActiveSkillList.h"
 #include <vector>
 
-class SkillFactory{
+class SkillFactory {
 	std::vector<Skill*> newbyArr;
 	std::vector<Skill*> warriorArr;
 public:
@@ -11,4 +11,3 @@ public:
 	Skill* getNewbySkill(int index);
 	Skill* getWarriorSkill(int index);
 };
-

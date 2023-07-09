@@ -13,7 +13,7 @@ public:
 	minDamageBuff(int r, int t);
 	virtual void allocate()override;
 	virtual void deAllocate()override;
-	~minDamageBuff() ;
+	~minDamageBuff();
 };
 
 class defenceBuff :public BuffBase {
@@ -21,26 +21,26 @@ public:
 	defenceBuff(int r, int t);
 	virtual void allocate()override;
 	virtual void deAllocate()override;
-	~defenceBuff() ;
+	~defenceBuff();
 };
 class activityBuff :public BuffBase {
 public:
 	activityBuff(int r, int t);
 	virtual void allocate()override;
 	virtual void deAllocate()override;
-	~activityBuff() ;
+	~activityBuff();
 };
 class hitRateBuff :public BuffBase {
 public:
 	hitRateBuff(int r, int t);
 	virtual void allocate()override;
 	virtual void deAllocate()override;
-	~hitRateBuff() ;
+	~hitRateBuff();
 };
 class avoidanceBuff :public BuffBase {
 public:
 	avoidanceBuff(int r, int t);
 	virtual void allocate()override;
 	virtual void deAllocate()override;
-	~avoidanceBuff() ;
+	~avoidanceBuff();
 };

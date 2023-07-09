@@ -1,13 +1,6 @@
 #include <iostream>
-#include "SkillFactory.h"
-#include "Player.h"
+#include "GameStream.h"
 int main() {
 
-	p.useSkill(0);
-	p.useSkill(1);
-	p.useSkill(2);
-	p.checkBuffList();
-	p.checkBuffList();
-	p.checkBuffList();
-	p.checkBuffList();
+	new GameStream();
 }

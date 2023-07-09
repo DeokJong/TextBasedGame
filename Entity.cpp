@@ -4,6 +4,7 @@ Entity::Entity(std::string name, string job, int maxHp, int maxMana, int maxDama
 	: name(name), job(job), maxHp(maxHp), maxMana(maxMana), maxDamage(maxDamage), minDamage(minDamage),
 	hp(maxHp), mana(maxMana), defence(5), activity(0), hitRate(65), avoidance(20) {
 	damage = 0;
+	level = 1;
 }
 
 Entity::Entity() {
@@ -43,7 +44,7 @@ Entity::Entity(const Entity& e) {
 }
 
 
-void Entity::setJob(string j) {this->job = j;}
+void Entity::setJob(string j) { this->job = j; }
 
 void Entity::setName() {
 	std::cout << "이름을 입력하시오 >> ";
@@ -54,35 +55,38 @@ void Entity::setMaxHp(int maxHp) { this->maxHp = maxHp; }
 void Entity::setMaxMana(int maxMana) { this->maxMana = maxMana; }
 void Entity::setMaxDamage(int maxDamage) { this->maxDamage = maxDamage; }
 void Entity::setMinDamage(int minDamage) { this->minDamage = minDamage; }
-void Entity::setHp(int hp){this->hp = hp;}
-void Entity::setMana(int mana){this->mana = mana;}
+void Entity::setHp(int hp) { this->hp = hp; }
+void Entity::setMana(int mana) { this->mana = mana; }
 void Entity::setDefence(int defence) { this->defence = defence; }
-void Entity::setActivity(int activity){this->activity = activity;}
+void Entity::setActivity(int activity) { this->activity = activity; }
 void Entity::setHitRate(int hitRate) { this->hitRate = hitRate; }
 void Entity::setAvoidance(int Avoidnace) { this->avoidance = avoidance; }
 
 void Entity::setDamage(int damage) { this->damage = damage; }
 
-int Entity::getHp(){return this->hp;}
-int Entity::getMana(){return this->mana;}
-int Entity::getDefence(){return this->defence;}
-int Entity::getActivity(){return this->activity;}
+void Entity::setLevel(int level) { this->level = level; }
+
+string Entity::getName() { return this->name; }
+
+int Entity::getHp() { return this->hp; }
+int Entity::getMana() { return this->mana; }
+int Entity::getDefence() { return this->defence; }
+int Entity::getActivity() { return this->activity; }
 int Entity::getHitRate() { return this->hitRate; }
 int Entity::getAvoidance() { return this->avoidance; }
 int Entity::getDamage() { return this->damage; }
+int Entity::getLevel() { return this->level; }
 int Entity::getMaxHp() { return this->maxHp; }
 int Entity::getMaxMana() { return this->maxMana; }
 int Entity::getMaxDamage() { return this->maxDamage; }
 int Entity::getMinDamage() { return this->minDamage; }
 
-void Entity::initRandom() {
-	random_device rd;
-	mt = *(new mt19937(rd()));
-}
 
 int Entity::roll(int l, int r) {
-	gen = uniform_int_distribution<int>(l, r);
-	return gen(mt);
+	random_device rd;
+	mt19937 gen(rd());
+	uniform_int_distribution<int> dis(l, r);
+	return dis(gen);
 }
 
 void Entity::upLevel() {
@@ -95,6 +99,6 @@ void Entity::upLevel() {
 
 int Entity::attack(int rate)
 {
-	int baseDamage=roll(this->getMinDamage(), this->getMaxDamage());
+	int baseDamage = roll(this->getMinDamage(), this->getMaxDamage());
 	return (int)(baseDamage * rate / 100);
 }

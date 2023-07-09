@@ -27,6 +27,19 @@ public:
 	
 
 	void checkBuffList();
+	
+	void initPlayer();
+	
+	void showStatus() {
+		cout << "    " << getName() << "ÀÇ ½ºÅÈ" << endl;
+		cout << " - HP         : " << getMaxHp() << endl;
+		cout << " - Mana       : " << getMana() << endl;
+		cout << " - Avg Damage : " << (int)((getMaxDamage()+getMinDamage())/2) << endl;
+		cout << " - Defence    : " << getDefence() << endl;
+		cout << " - Hit Rate   : " << getHitRate() <<"%" << endl;
+		cout << " - Avoidance  : " << getAvoidance()<<"%" << endl;
+		cout << " - Level      : " << getLevel() << endl;
+	}
 };
 
 extern Player p;

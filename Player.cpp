@@ -1,8 +1,6 @@
 #include "Player.h"
-//const std::string& name, const std::string& job, int maxHp,
-//int maxMana, int maxDamage, int minDamage
+//std::string name, string job, int maxHp, int maxMana, int maxDamage, int minDamage
 Player::Player() : Entity("","ÃÊº¸ÀÚ",100,30,20,10) {
-	setName();
 	addSkill(SF.getNewbySkill(1));
 	addSkill(SF.getNewbySkill(2));
 	addSkill(SF.getNewbySkill(0));
@@ -55,7 +53,6 @@ void Player::checkBuffList() {
 		int loopCount = 0;
 		for (auto it = buffList.begin(); it != buffList.end(); it++, loopCount++) {
 			if (!((*it)->isTime())) {
-				(*it)->deAllocate();
 				delete* it;
 				buffList.erase(it);
 				break;
@@ -67,5 +64,18 @@ void Player::checkBuffList() {
 
 		if (done || loopCount == 0) break;
 	}
+}
+void Player::initPlayer() {
+	//HP 90~120
+	//MinDamage - MaxDamage = -10
+	//8~15
+	//MaxMana 20~30
+	//Defence 5~10;
+	setName();
+	setMaxHp(roll(90, 120));
+	int temp = roll(12, 15);
+	setMaxDamage(temp + 5);
+	setMinDamage(temp - 5);
+	setDefence(roll(5, 10));
 }
 Player p;

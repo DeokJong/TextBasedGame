@@ -2,7 +2,6 @@
 
 BuffBase::BuffBase(int r, int t) :rate(r), time(t) {}
 
-
 int BuffBase::getRate() {
 	return rate;
 }

@@ -17,4 +17,3 @@ public:
 	DeathStrike();
 	virtual void active()override;
 };
-

@@ -1,17 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="헤더 파일">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="SkillClass">
       <UniqueIdentifier>{08652cab-b349-49f4-afb1-7a89f5fb48ea}</UniqueIdentifier>
@@ -46,14 +38,30 @@
     <Filter Include="SkillClass\Buff\StandardBuff">
       <UniqueIdentifier>{4a3539f5-8c26-4ed1-b5d1-d2c5774740e9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Entity\Monster">
-      <UniqueIdentifier>{86170667-e39b-495a-a91f-5e143cd702cd}</UniqueIdentifier>
+    <Filter Include="EventHandler">
+      <UniqueIdentifier>{848e34bd-0cf2-4c4b-8e80-4be8533736c8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Entity\Monster\MonsterFactory">
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="EventHandler\EventList">
+      <UniqueIdentifier>{f69b663c-583a-40a2-9e4e-20bee6106315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventHandler\EventList\EventBase">
+      <UniqueIdentifier>{9357ec8d-c47d-4c4c-b48e-a18cea3f6427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameStream">
+      <UniqueIdentifier>{0bd142c7-d4f8-4c85-b1e5-93a19f59e3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\MonsterFactory">
       <UniqueIdentifier>{e10aac00-48bb-444e-a5e3-a20f31a6fa4c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Entity\Monster\MonsterList">
+    <Filter Include="Entity\MonsterFactory\MonsterList">
       <UniqueIdentifier>{a4854997-03da-4778-bf6d-7a13400fd2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\MonsterFactory\MonsterList\Monster">
+      <UniqueIdentifier>{0319b523-386e-45d8-84b1-6ffb97259a7f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -85,7 +93,25 @@
       <Filter>SkillClass\Buff\StandardBuff</Filter>
     </ClCompile>
     <ClCompile Include="MonsterList.cpp">
-      <Filter>Entity\Monster\MonsterList</Filter>
+      <Filter>Entity\MonsterFactory\MonsterList</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>EventHandler\EventList\EventBase</Filter>
+    </ClCompile>
+    <ClCompile Include="EventList.cpp">
+      <Filter>EventHandler\EventList</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>EventHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStream.cpp">
+      <Filter>GameStream</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Entity\MonsterFactory\MonsterList\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterFactory.cpp">
+      <Filter>Entity\MonsterFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -113,11 +139,29 @@
     <ClInclude Include="StandardBuff.h">
       <Filter>SkillClass\Buff\StandardBuff</Filter>
     </ClInclude>
-    <ClInclude Include="Monster.h">
-      <Filter>Entity\Monster</Filter>
-    </ClInclude>
     <ClInclude Include="MonsterList.h">
-      <Filter>Entity\Monster\MonsterList</Filter>
+      <Filter>Entity\MonsterFactory\MonsterList</Filter>
     </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>EventHandler\EventList\EventBase</Filter>
+    </ClInclude>
+    <ClInclude Include="EventList.h">
+      <Filter>EventHandler\EventList</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>EventHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStream.h">
+      <Filter>GameStream</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Entity\MonsterFactory\MonsterList\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterFactory.h">
+      <Filter>Entity\MonsterFactory</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

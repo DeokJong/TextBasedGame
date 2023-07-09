@@ -129,7 +129,13 @@
   <ItemGroup>
     <ClCompile Include="BuffBase.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="EventList.cpp" />
+    <ClCompile Include="GameStream.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="MonsterFactory.cpp" />
     <ClCompile Include="MonsterList.cpp" />
     <ClCompile Include="NewbyActiveSkillList.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -141,7 +147,12 @@
   <ItemGroup>
     <ClInclude Include="BuffBase.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="EventList.h" />
+    <ClInclude Include="GameStream.h" />
     <ClInclude Include="Monster.h" />
+    <ClInclude Include="MonsterFactory.h" />
     <ClInclude Include="MonsterList.h" />
     <ClInclude Include="NewbyActiveSkillList.h" />
     <ClInclude Include="Player.h" />
@@ -149,6 +160,9 @@
     <ClInclude Include="SkillFactory.h" />
     <ClInclude Include="StandardBuff.h" />
     <ClInclude Include="WarriorActiveSkillList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
